@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+body{
+  background-color: black;
+  margin: 0;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin: 0;
+    animation: title 4s forwards;
+    background: -webkit-linear-gradient(white, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Standard syntax */
+@keyframes title {
+  0%{
+    font-size: 1em;
+    background: -webkit-linear-gradient(white, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+50%{
+    font-size: 10em;
+  }
+  80%{
+    transform: translate(-50%, -50%);
+    font-size: 10em;
+    background: -webkit-linear-gradient(white, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100%{
+    transform: translate(-50%, 23vh);
+    font-size: 8em;
+    background: -webkit-linear-gradient(#ff0000,#ff3684, #D7DF53, #11C5A5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+
+}
+.images {
+  background: url(slideshow.jpg);
+  position: relative;
+  transform: translate3d(0, 0, 0);
+
+}
+
+img{
+  width: 31px;
+  height: auto;
+}
+
+.right{
+  animation: slideshow-right 10s linear infinite;
+
+}
+
+@keyframes slideshow-right {
+  0%    { left: 0; }
+  100%  { left: -100%; }
+}
+
+.left{
+  animation: slideshow-left 10s linear infinite;
+
+}
+
+@keyframes slideshow-left {
+  0%    { left: 0; }
+  100%  { left: 100%; }
+}
