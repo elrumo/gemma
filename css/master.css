@@ -3,6 +3,8 @@
 body{
   background-color: black;
   margin: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .title{
@@ -58,17 +60,14 @@ body{
 }
 
 .tech-slideshow > div {
-  height: 100px;
   width: 550vw;
   background: url(https://i.imgur.com/V8yldh5.png);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+  background-size: 100px auto;
+  height: 100vh;
   transform: translate3d(0, 0, 0) scale(1);
 }
 .tech-slideshow .mover-1 {
-  animation: moveSlideshow 12s linear infinite;
+  animation: moveSlideshow 25s linear infinite;
 }
 
 @keyframes moveSlideshow {
@@ -76,45 +75,3 @@ body{
     transform: translateX(-66.6666%);
   }
 }
-
-
-/*
-.slideshow {
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
-}
-
-.images {
-  background: url(slideshow.jpg);
-  position: relative;
-  transform: translate3d(0, 0, 0);
-
-}
-
-img{
-  width: 31px;
-  height: auto;
-}
-
-.right{
-  animation: slideshow-right 10s linear infinite;
-
-}
-
-@keyframes slideshow-right {
-  0%    { left: 0; }
-  100%  { left: -100%; }
-}
-
-.left{
-  animation: slideshow-left 10s linear infinite;
-
-}
-
-@keyframes slideshow-left {
-  0%    { left: 0; }
-  100%  { left: 100%; }
-}
-*/
