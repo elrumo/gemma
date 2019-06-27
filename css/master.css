@@ -76,8 +76,8 @@ body{
 
 .tech-slideshow > div {
   width: 550vw;
-  background: url(https://i.imgur.com/V8yldh5.png);
-  background-size: 100px auto;
+  background: url(https://i.imgur.com/UNhr6SH.png);
+  background-size: 200px auto;
   height: 100vh;
   transform: translate3d(0, 0, 0) scale(1);
 }
