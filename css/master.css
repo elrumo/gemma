@@ -76,7 +76,7 @@ body{
 
 .tech-slideshow > div {
   width: 550vw;
-  background: url(https://i.imgur.com/V8yldh5.png);
+  background: url(images/gemma.jpg);
   background-size: 100px auto;
   height: 100vh;
   transform: translate3d(0, 0, 0) scale(1);
